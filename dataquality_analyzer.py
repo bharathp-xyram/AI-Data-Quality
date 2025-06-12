@@ -558,7 +558,7 @@ Respond in this exact JSON format:
 
         print(f"🤖 DEBUG: Calling Claude for {section_type} - {dimension}")
         # TEMPORARY FIX - for testing only:
-        self.claude_client = anthropic.Anthropic(api_key="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")
+        self.claude_client = anthropic.Anthropic(api_key="")
         if not self.claude_client:
             print("❌ No Claude client available")
             return self._fallback_response(section_type, dimension)
